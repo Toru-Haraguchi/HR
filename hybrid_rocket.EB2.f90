@@ -546,17 +546,6 @@ program HybridRocket
 !     --- Structure calculation ---
 !     --- Nozzle_throat_areÅENozzle_exit_area---
 
-      open(13,file='nasa-cea.plt',form='formatted')
-        read(13,*)
-        read(13,*)
-        read(13,*) pe_ini,son_ini,mach_ini,isp_ini,cf_ini
-        read(13,*) pe, son, mach, isp0, cf
-      close(13)
-
-	  pen(0) = pe
-	  sonn(0) = son
-	  machn(0) = mach
-	  isp(0) = isp0
 
 
 
