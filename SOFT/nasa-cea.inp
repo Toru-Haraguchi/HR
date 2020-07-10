@@ -1,0 +1,11 @@
+ problem    o/f=  0.164299563    
+     rocket  frozen  nfz=2  tcest,k=3000
+   p,bar=   20.1960640    
+   sup,ae/at=   17.1441288    
+ react
+   oxid=O2 wt=100  t,k=298.15
+   fuel=C3H6  wt=100  t,k=298.15  
+     h,kj/mol=-20.918  C 3 H 6 
+ output
+     plot p son machfz ispfz cffz
+ end

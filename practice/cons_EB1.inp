@@ -1,0 +1,29 @@
+=====COMPUTATIONAL PARAMETERS ================================
+0.1d0               Time step size [sec]
+===== OXIDIZER ===============================================
+LOXÅ®GOX
+1140.d0             Density [kg/m^3]
+===== FUEL ===================================================
+PP
+1.54d-4             a_fuel[m/sec]
+0.7175d0              n_fuel
+926.6d0              Density [kg/m^3]
+3.d0                   alpha_fuel_upper bound
+0.d0                   alpha_fuel_lower bound
+===== COMBUSTION PARAMETERS ==================================
+1.d0                Efficiency of Cf
+1.d0                Efficiency of Isp
+===== STRUCTURE ==============================================
+1.25d0              Safe factor
+15.d0               Nozzle expansion angle@entrance[deg]
+15.d0               Nozzle expansion angle@exit[deg]
+1.6d09              Yield stress@chamber[Pa]
+7800.d0             Density@chamber[kg/m^3]
+1.6d09              Yield stress@reservoir[Pa]
+7800.d0             Density@reservoir[kg/m^3]
+0.6d0              Mass ratio(engine-mass/total-mass)
+1.5d0              Ratio of engine length and rocket length
+===== DRAG ===================================================
+1.33d-4             Density change of drag [1/m]
+===== THRUST =================================================
+1.d0                Thrust efficiency
