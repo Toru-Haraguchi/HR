@@ -521,30 +521,7 @@ program HybridRocket
         enddo
       close(2)
 
-!----------------------------------------------
-!   -----NASA-CEA(time=0)-------
-      open(15,file='nasa-cea.inp',form='formatted')
-        write(15,*)'problem    o/f=',of1
-        write(15,*)'    rocket  frozen  nfz=2  tcest,k=3000'
-        write(15,*)'  p,bar=',pc_bar
-        write(15,*)'  sup,ae/at=',epsilon
-        write(15,*)'react'
-        write(15,*)'  oxid=O2 wt=100  t,k=298.15'
-        write(15,*)'  fuel=C3H6  wt=100  t,k=298.15  '
-        write(15,*)'    h,kj/mol=-20.918  C 3 H 6 '
-        write(15,*)'output'
-        write(15,*)'    plot p son machfz ispfz cffz'
-        write(15,*)'end'
-      close(15)
 
-      call system('echo nasa-cea > inp.txt') !echo 文字列＞ファイル名　ファイルに文字列を出力
-      call system('sh cea-exe.sh') !cea-exe.sh　を実行
-!	  call system('mv inp.txt in.txt')
-      call system('rm inp.txt') !inp.txtを削除
-
-!------------------------------------------------------------------------------
-!     --- Structure calculation ---
-!     --- Nozzle_throat_are・Nozzle_exit_area---
 
 
 
